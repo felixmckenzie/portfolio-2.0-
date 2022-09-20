@@ -3,6 +3,9 @@ import styles from "../styles/Home.module.css";
 import { Container } from "@mui/material";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
+
+
+
 export default function Home() {
   return (
 	 <Container className={styles.container}>

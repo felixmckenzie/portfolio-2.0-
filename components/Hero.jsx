@@ -20,7 +20,7 @@ export default function Hero() {
             alignItems: "center",
           }}
         >
-          <Avatar src="/profilepic.jpg" sx={{ width: 200, height: 200 }} />
+          <Avatar src="/profileavator.jpg" sx={{ width: 200, height: 200 }} />
         </Grid>
 
         <Grid
@@ -35,7 +35,7 @@ export default function Hero() {
             textAlign: "center",
           }}
         >
-          <h1>Hello, I'm Felix 👋</h1>
+          <h1>Felix McKenzie</h1>
           <h3>
             Web Developer, from <br></br> Byron Bay Australia
           </h3>

@@ -20,7 +20,7 @@ export default function ExternalLinks() {
         <Grid item key={item.name}>
             {item.name}
           <Link href={item.url}>
-            <IconButton>
+            <IconButton >
               <item.icon />
             </IconButton>
           </Link>

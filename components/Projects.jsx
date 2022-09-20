@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
@@ -10,9 +11,9 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
 const projects = [
-    {title: "Rebuilt MarketPlace", description:"A two sided marketplace to buy and sell building materials", technologies: "Rails, PostgresQL" ,link: ""},
+    {title: "Rebuilt MarketPlace", description:"A two sided marketplace to buy and sell building materials", technologies: "Rails, PostgresQL" ,img: "/rebuilt2.png",},
     {title: "Who Wants To Be A Ruby Millionaire", description:"A terminal quiz app ", technologies:"Ruby",link: ""},
-    {title: "Task Manager", description:"A task manager application", technologies:"React",link: ""},
+    {title: "Task Manager", description:"A task manager application", technologies:"React",link: "",img:"/taskapp2.png"},
     
 ]
 
@@ -33,6 +34,7 @@ export default function Projects() {
             return(
                 <Grid item  xs={12} sm={6} md={4} >
                 <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', textAlign:"center" }}>
+                <Image src={project.img} width={345} height={159}/>
                 <CardHeader title={project.title} subheader={project.technologies} />
                 <CardContent>
                       {project.description}
