@@ -13,7 +13,7 @@ export function useModeContext  () {
 }
 
 export function ToggleModeProvider({children}) {
-    const [mode,setMode] = useState('light')
+    const [mode,setMode] = useState('dark')
     
     const toggleMode = () =>  {
         setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));

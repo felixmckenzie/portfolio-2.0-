@@ -1,5 +1,6 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import styles from "../styles/Projects.module.css";
+import Image from "next/image";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
@@ -11,41 +12,67 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
 const projects = [
-    {title: "Rebuilt MarketPlace", description:"A two sided marketplace to buy and sell building materials", technologies: "Rails, PostgresQL" ,img: "/rebuilt2.png",},
-    {title: "Who Wants To Be A Ruby Millionaire", description:"A terminal quiz app ", technologies:"Ruby",link: ""},
-    {title: "Task Manager", description:"A task manager application", technologies:"React",link: "",img:"/taskapp2.png"},
-    
-]
-
+  {
+    title: "Rebuilt MarketPlace",
+    description:
+      "A two sided marketplace to buy and sell used building materials. Features include user authentication, in app messaging, search/filter function and payment integration with Stripe ",
+    technologies: "Rails, Bootstrap, PostgresQL",
+    github_link: "https://github.com/felixmckenzie/rebuilt",
+    live_link: "https://rebuilt-official.herokuapp.com/"
+  },
+  {
+    title: "Task Manager",
+    description: "A task manager application built with React and MUI components. Features include creating, editing and deleting tasks.",
+    technologies: "React, CSS, Material UI",
+    github_link: "",
+    live_link: ""
+  },
+  {
+    title: "Calculator",
+    description: "A vanilla Javascript calculator built as a side project to learn JS fundamentals while at Coder Academy",
+    technologies: "HTML, CSS, Javascript",
+    github_link: "https://github.com/felixmckenzie/js-calculator",
+    live_link: "https://felixmckenzie.github.io/js-calculator/"
+  },
+  {
+    title: "Who Wants To Be A Ruby Millionaire",
+    description: "A terminal quiz app based on the game show 'Who Wants to Be A Millionaire'. This was my first project at Coder Academy and taught me the fundamentals of programming in Ruby ",
+    technologies: "Ruby",
+    github_link: "https://github.com/felixmckenzie/Who-Wants-To-Be-A-Ruby-Millionaire"
+  },
+];
 
 export default function Projects() {
   return (
-<Container  sx={{ py: 8 }} maxWidth="md" >
-<Typography
-    component="h1"
-    variant="h4"
-    align="center"
-    gutterBottom
-  >
-   Recent Projects
-  </Typography>
-    <Grid container spacing={4} >
-        {projects.map((project) =>{
-            return(
-                <Grid item  xs={12} sm={6} md={4} >
-                <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', textAlign:"center" }}>
-                <Image src={project.img} width={345} height={159}/>
-                <CardHeader title={project.title} subheader={project.technologies} />
-                <CardContent>
-                      {project.description}
-                </CardContent>
-                </Card>
-                </Grid> 
-            )
+    <Container sx={{ py: 8 }} maxWidth="sm" align="center">
+        <h2>RECENT PROJECTS</h2>
+      <Grid container spacing={4}>
+        {projects.map((project) => {
+          return (
+           <Grid item xs={12}>
+            <div className={styles.card}>
+              <Card
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  textAlign: "center",
+                  padding:"10px"
+                }}
+              >
+                <CardHeader
+                  title={project.title}
+                  subheader={project.technologies}
+                />
+                <CardContent>{project.description}</CardContent>
+               <a target="_blank" href={project.github_link}>View Source Code</a>
+               <a target="_blank" href={project.live_link}>View Live Demo</a>
+              </Card>
+              </div>
+            </Grid>
+          );
         })}
-    </Grid>
-
-</Container>
-   
-  )
+      </Grid>
+    </Container>
+  );
 }

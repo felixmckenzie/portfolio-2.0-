@@ -1,0 +1,9 @@
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #cbdac7, #bdcfb8, #a1bb99, #85a77a, #779c6b) ;
+}

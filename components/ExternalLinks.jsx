@@ -7,8 +7,8 @@ import { IconButton } from '@mui/material';
 import { Link } from '@mui/material';
 
 const socialItems = [
-    { icon: GitHubIcon, url: "", name: "github" },
-    { icon: LinkedInIcon, url: "", name: "linkedin" },
+    { icon: GitHubIcon, url: "https://github.com/felixmckenzie", name: "github" },
+    { icon: LinkedInIcon, url: "https://www.linkedin.com/in/felix-mckenzie-0330601b1/", name: "linkedin" },
     {icon: EmailIcon, url:"mailto:felixmckenzie90@gmail.com", name:"email" }
   ];
 
@@ -19,11 +19,11 @@ export default function ExternalLinks() {
         {socialItems.map((item) => (
         <Grid item key={item.name}>
             {item.name}
-          <Link href={item.url}>
+          <a target="_blank" href={item.url}>
             <IconButton >
               <item.icon />
             </IconButton>
-          </Link>
+         </a>
         </Grid>
       ))}
      </Grid>

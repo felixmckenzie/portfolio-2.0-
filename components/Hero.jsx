@@ -1,4 +1,6 @@
 import React from "react";
+import styles from "../styles/Hero.module.css"
+import Image from 'next/image'
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Avatar from "@mui/material/Avatar";
@@ -20,7 +22,9 @@ export default function Hero() {
             alignItems: "center",
           }}
         >
-          <Avatar src="/profileavator.jpg" sx={{ width: 200, height: 200 }} />
+          <div className={styles.profile}>
+          <Avatar src="/profilepic.jpg"  sx={{width:200, height:200}} />
+          </div>
         </Grid>
 
         <Grid
