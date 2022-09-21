@@ -11,16 +11,16 @@ import { Container } from "@mui/material";
 export default function Skills() {
     const skillsData = [
         {   id: "panel1",
-            title: "HTML & CSS",
-            content:"Developing responsive and accessible layouts  was a skill I learned early on in my web development journey."
+            title: "Responsive and Accessible Design",
+            content:"Creating responsive and accessible layouts with CSS and semantic HTML was a skill I learned early on in my web development journey."
         },
         {
             id: "panel2",
-            title: "Ruby on Rails",
-            content:"I have gained rich experience with the Rails framework through developing a two sided marketplace application. I know the ins and outs of MVC architecture and know my way around a PostgresQL Database"
+            title: "Ruby on Rails Applications",
+            content:"I have gained rich experience with the Rails framework through developing a two sided marketplace application. I know the ins and outs of MVC architecture."
         },
         {   id: "pane3",
-            title: "Javascript + React + Next.JS",
+            title: "Javascript + React + Next.JS Frontends",
             content:"I create highly interactive frontends with JS and React that are aesethetically pleasing, functional and intuitive to use"
         },
         {   
