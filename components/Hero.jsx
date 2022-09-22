@@ -23,7 +23,7 @@ export default function Hero() {
           }}
         >
           <div className={styles.profile}>
-          <Avatar src="/profilepic.jpg"  sx={{width:200, height:200}} />
+          <Avatar src="/profilepic.jpg" alt="profile picture"  sx={{width:200, height:200}} />
           </div>
         </Grid>
 
