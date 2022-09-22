@@ -15,7 +15,7 @@ const toggleMode = useUpdateModeContext()
     <Toolbar sx={{ borderBottom: 1, borderColor: "divider", justifyContent:'space-between', overflowX: "auto" }}>
         <Link href="/"><a>Home</a></Link>
         <Link href="/about"><a>About</a></Link>
-        <a target="_blank" href="/Resume.pdf">Resume</a>
+        <a target="_blank" href="/Resume.pdf" rel="noopener noreferrer">Resume</a>
         <IconButton sx={{ ml: 1 }} onClick={toggleMode} color="inherit">
         {mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
       </IconButton>

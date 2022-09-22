@@ -19,7 +19,7 @@ export default function ExternalLinks() {
         {socialItems.map((item) => (
         <Grid item key={item.name}>
             {item.name}
-          <a target="_blank" href={item.url}>
+          <a target="_blank" href={item.url} rel="noopener noreferrer">
             <IconButton >
               <item.icon />
             </IconButton>

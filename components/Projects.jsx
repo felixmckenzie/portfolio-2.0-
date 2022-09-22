@@ -49,7 +49,7 @@ export default function Projects() {
       <Grid container spacing={4}>
         {projects.map((project) => {
           return (
-           <Grid item xs={12}>
+           <Grid item xs={12} key={project.title}>
             <div className={styles.card}>
               <Card
                 sx={{
