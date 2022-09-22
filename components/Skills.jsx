@@ -21,12 +21,12 @@ export default function Skills() {
         },
         {   id: "pane3",
             title: "Javascript + React + Next.JS Frontends",
-            content:"I create highly interactive frontends with JS and React that are aesethetically pleasing, functional and intuitive to use"
+            content:"I love to create interactive frontends with JS and React that are aesethetically pleasing, functional and intuitive to use"
         },
         {   
             id: "panel4",
             title: "Node, Express & MongoDB",
-            content:"...Coming Soon"
+            content:"...Currently learning"
         },
     ]
 
