@@ -65,8 +65,8 @@ export default function Projects() {
                   subheader={project.technologies}
                 />
                 <CardContent>{project.description}</CardContent>
-               <a target="_blank" href={project.github_link}>View Source Code</a>
-               <a target="_blank" href={project.live_link}>View Live Demo</a>
+               <a target="_blank" rel="noreferrer"  href={project.github_link}>View Source Code</a>
+               <a target="_blank" rel="noreferrer"  href={project.live_link}>View Live Demo</a>
               </Card>
               </div>
             </Grid>
