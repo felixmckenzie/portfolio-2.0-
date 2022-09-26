@@ -20,7 +20,7 @@ const projects = [
     description: "A task manager application built with React and MUI components. Features include creating, editing and deleting tasks.",
     technologies: "React, CSS, Material UI",
     github_link: "https://github.com/felixmckenzie/task-manager",
-    live_link: "https://task-manager-fmckenzie.netlify.app/i"
+    live_link: "https://task-manager-fmckenzie.netlify.app"
   },
   {
     title: "Calculator",
