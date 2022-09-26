@@ -1,14 +1,9 @@
 import React from "react";
 import styles from "../styles/Projects.module.css";
-import Image from "next/image";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
-import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import { CardActionArea } from "@mui/material";
-import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
 const projects = [
@@ -24,8 +19,8 @@ const projects = [
     title: "Task Manager",
     description: "A task manager application built with React and MUI components. Features include creating, editing and deleting tasks.",
     technologies: "React, CSS, Material UI",
-    github_link: "",
-    live_link: ""
+    github_link: "https://github.com/felixmckenzie/task-manager",
+    live_link: "https://task-manager-fmckenzie.netlify.app/i"
   },
   {
     title: "Calculator",
